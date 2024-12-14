@@ -1,0 +1,193 @@
+nav a {
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    
+    gap: 2em;
+    font-size: larger;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border: solid;
+    border-color: white;
+    border-bottom-color: pink;
+    color: pink;
+    background-color: white;
+    padding: 1em;
+    padding-bottom: 2em;
+    height: 5em;
+    
+}
+header img{
+    width: 5em;
+}
+
+a {
+    color: pink;
+    transition: color 250ms ease;
+}
+
+a:hover {
+    color: hotpink
+}
+
+.afleveringen article {
+    border: solid;
+    border-color: darkseagreen;
+    background-color: mistyrose;
+    border-width: 0.5em;
+    border-radius: 3em;
+    display: flex;
+    padding: 1.5em;
+    padding-left: 1em;
+    border-spacing: 5px;
+    margin: 2em;
+
+}
+.leesmeer{
+    color: black;
+    background-color: rgb(255, 187, 209);
+    border-radius: 2em;
+    margin-bottom: 10.5em;
+}
+.luisternu{
+    color: black;
+    background-color: rgb(255, 187, 209);
+    border-radius: 2em;
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+}
+.home article .luisternu{
+    display: flex;
+    justify-content: flex-end;
+
+}
+footer {
+    background-color: mistyrose;
+    border: solid;
+    border-color: mistyrose;
+    padding: 2em;
+    border-width: 2em;
+}
+
+footer{
+    display: flex;
+    padding: 1em;
+    margin-top: 2em;
+}
+footer div{
+    padding: 2em;
+}
+.afleveringen div{
+    padding: 1em;
+}
+
+.afleveringen article img{
+width: 15em
+}
+.afleveringen{
+    background-color:white
+}
+.home article img{
+  width: 20em;
+  padding: 2em;
+}
+header img{
+    width: 8em;
+
+}
+.home section div{
+    border-top: solid;
+    border-bottom: solid;
+    border-color: mistyrose;
+    border-width: 1em;
+    padding: 1em;
+    margin: 3em;
+    width: 60%;
+}
+.home article section{
+    display: flex;
+}
+.home section {
+    display: flex;
+}
+.home article{
+    border: solid;
+    border-color: darkseagreen;
+    border-width: 1em;
+    display: flex;
+    
+}
+.home article div{
+    display: block;
+    padding: 1em;
+    
+}
+.home iframe{
+    width: 40em;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.overons section{
+    border: solid;
+    border-color:darkseagreen;
+    background-color: mistyrose;
+    border-width: 0.5em;
+    border-radius: 3em;
+    margin: 2em;
+    display: flex;
+    padding: 2em;
+    margin-bottom: 3em;
+}
+.overons div{
+    padding: 1em;
+}
+.overons section img{
+    width: 12em;
+}
+.home{
+    padding: 2em;
+    margin: 1em;
+}
+/* ik heb voor deze animaties https://www.w3schools.com/css/css3_animations.asp gebruikt als hulpmiddel */
+.afleveringen h1{
+position: relative;
+animation-name: afleveringen;
+animation-duration:1s;
+animation-fill-mode: forwards;
+animation-timing-function: linear;
+
+}
+
+@keyframes afleveringen {
+    0%   {left: 0px}
+    25%  {left: 200px}
+    50%  {left:400px;}
+    75%  {left:600px;}
+    100% {left: 730px}
+}
+.overons h1{
+    position: relative;
+    animation-name: overons;
+    animation-duration:1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+@keyframes overons {
+    0%   {left: 0px}
+    25%  {left: 200px}
+    50%  {left:400px;}
+    75%  {left:600px;}
+    100% {left: 730px}
+}
